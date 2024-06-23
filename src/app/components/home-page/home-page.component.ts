@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { PageSectionComponent } from '../page-section/page-section.component';
+import { IntroSectionComponent } from '../intro-section/intro-section.component';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [PageSectionComponent],
+  imports: [IntroSectionComponent],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css',
 })
