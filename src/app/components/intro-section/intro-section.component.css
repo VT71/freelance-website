@@ -8,8 +8,55 @@
 
 .section-content-container {
   height: 100%;
+  padding-top: 3rem;
+}
+
+.navbar {
+  width: fit-content;
+}
+
+.navbar-wrapper {
+  width: fit-content;
+  margin: auto;
 }
 
 .navlinks-list {
+  width: auto;
   margin: 0;
+  padding: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
 }
+
+.navlink {
+  text-decoration: none;
+  color: #f4f2f2;
+  font-family: "ubuntu-medium";
+}
+
+.navlinks-list-item {
+  /* margin: 0 2rem; */
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-line {
+  background-color: aqua;
+  height: 2px;
+  border-radius: 1px;
+  width: 100%;
+  margin: auto;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.navbar-line-child {
+  height: 2px;
+  width: 7rem;
+}
+
+.navbar-line-child.intro {
+background-color: blue;
+  }

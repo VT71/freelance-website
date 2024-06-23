@@ -10,7 +10,12 @@ body {
 }
 
 .section-content-container {
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+@font-face {
+  font-family: ubuntu-medium;
+  src: url(assets/fonts/Ubuntu/Ubuntu-Medium.ttf) format("opentype");
 }
