@@ -4,42 +4,114 @@
       <nav class="navbar">
         <ol class="navlinks-list">
           <li class="navlinks-list-item">
-            <div class="navlink-container active">
+            <div
+              class="navlink-container"
+              [class.active]="activeNavLink === 'intro'"
+            >
               <div class="reflection"></div>
-              <a class="navlink" href="#intro-section">Intro</a>
+              <a
+                class="navlink"
+                href="#intro-section"
+                (click)="onClickNav('intro')"
+                >Intro</a
+              >
               <div class="navbar-line first intro"></div>
             </div>
           </li>
           <li class="navlinks-list-item">
-            <div class="navlink-container">
+            <div
+              class="navlink-container"
+              [class.active]="activeNavLink === 'projects'"
+            >
               <div class="reflection"></div>
-              <a class="navlink" href="#intro-section">Projects</a>
+              <a
+                class="navlink"
+                href="#intro-section"
+                (click)="onClickNav('projects')"
+                >Projects</a
+              >
               <div class="navbar-line"></div>
             </div>
           </li>
           <li class="navlinks-list-item">
-            <div class="navlink-container">
+            <div
+              class="navlink-container"
+              [class.active]="activeNavLink === 'reviews'"
+            >
               <div class="reflection"></div>
-              <a class="navlink" href="#intro-section">Reviews</a>
+              <a
+                class="navlink"
+                href="#intro-section"
+                (click)="onClickNav('reviews')"
+                >Reviews</a
+              >
               <div class="navbar-line"></div>
             </div>
           </li>
           <li class="navlinks-list-item">
-            <div class="navlink-container">
+            <div
+              class="navlink-container"
+              [class.active]="activeNavLink === 'quote'"
+            >
               <div class="reflection"></div>
-              <a class="navlink" href="#intro-section">Quote</a>
+              <a
+                class="navlink"
+                href="#intro-section"
+                (click)="onClickNav('quote')"
+                >Quote</a
+              >
               <div class="navbar-line"></div>
             </div>
           </li>
           <li class="navlinks-list-item">
-            <div class="navlink-container">
+            <div
+              class="navlink-container"
+              [class.active]="activeNavLink === 'contact'"
+            >
               <div class="reflection"></div>
-              <a class="navlink" href="#intro-section">Contact</a>
+              <a
+                class="navlink"
+                href="#intro-section"
+                (click)="onClickNav('contact')"
+                >Contact</a
+              >
               <div class="navbar-line last"></div>
             </div>
           </li>
         </ol>
       </nav>
+    </div>
+    <div class="intro-text-wrapper">
+      <h2 class="intro-heading">
+        Hi, I'm Victor
+        <br />
+        passionate about creating
+        <span class="carattere">beautiful websites</span>
+      </h2>
+      <div class="stats-container">
+        <div class="stat-container">
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example home icon"
+            fontIcon="check_circle"
+          ></mat-icon>
+          <p>100% Job Success Score on Upwork</p>
+        </div>
+
+        <div class="stat-container">
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example home icon"
+            fontIcon="workspace_premium"
+          ></mat-icon>
+          <p>Top Rated Badge on Upwork</p>
+        </div>
+      </div>
+      <div class="main-buttons-container">
+        <button class="main-button" href="#intro-section">Get a Quote</button>
+        <button class="main-button" href="#intro-section">Let's talk</button>
+        <button class="main-button" href="#intro-section">Hire Options</button>
+      </div>
     </div>
   </div>
 </div>

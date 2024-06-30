@@ -19,3 +19,11 @@ body {
   font-family: ubuntu-medium;
   src: url(assets/fonts/Ubuntu/Ubuntu-Medium.ttf) format("opentype");
 }
+
+@font-face {
+  font-family: carettere;
+  src: url(assets/fonts/Carattere/Carattere-Regular.ttf) format("opentype");
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
