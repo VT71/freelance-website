@@ -15,6 +15,16 @@ body {
   margin: auto;
 }
 
+.section-heading {
+  color: #ffffff;
+  text-align: center;
+  font-family: carettere;
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
 @font-face {
   font-family: ubuntu-medium;
   src: url(assets/fonts/Ubuntu/Ubuntu-Medium.ttf) format("opentype");
@@ -25,5 +35,11 @@ body {
   src: url(assets/fonts/Carattere/Carattere-Regular.ttf) format("opentype");
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
