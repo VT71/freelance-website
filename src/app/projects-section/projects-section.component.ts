@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-projects-section',
   standalone: true,
-  imports: [],
+  imports: [MatIconModule],
   templateUrl: './projects-section.component.html',
-  styleUrl: './projects-section.component.css'
+  styleUrl: './projects-section.component.css',
 })
-export class ProjectsSectionComponent {
-
-}
+export class ProjectsSectionComponent {}
