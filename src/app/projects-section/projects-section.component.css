@@ -7,6 +7,33 @@
   width: 100%;
 }
 
+.projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+.project:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.project:nth-child(2n) > .project-info {
+  align-items: start;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.project:nth-child(2n) > .project-info > .main-info {
+  align-items: start;
+}
+
+.project:nth-child(2n + 1) > .project-info > .main-info {
+  align-items: end;
+}
+
 .project {
   display: flex;
   align-items: end;
@@ -14,9 +41,14 @@
   height: 270px;
 }
 
-.project-image {
+.project-image-link {
   height: 100%;
   width: 48%;
+}
+
+.project-image {
+  height: 100%;
+  width: 100%;
   border: 4px solid white;
   -webkit-box-shadow: inset 0px 0px 23px 2px rgba(0, 0, 0, 1);
   -moz-box-shadow: inset 0px 0px 23px 2px rgba(0, 0, 0, 1);
@@ -25,6 +57,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .project-image:hover {
@@ -37,8 +70,16 @@
     0px 0px 51px -18px rgba(255, 255, 255, 1);
 }
 
-.project-image.kris {
+.project-image.ve {
   background-image: url("../../assets/project1.png");
+}
+
+.project-image.ac {
+  background-image: url("../../assets/project2.png");
+}
+
+.project-image.sc {
+  background-image: url("../../assets/project3.png");
 }
 
 .project-info {

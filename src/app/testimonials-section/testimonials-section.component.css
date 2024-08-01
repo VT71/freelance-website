@@ -1,0 +1,53 @@
+.testimonials-wrapper {
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 2rem;
+}
+
+.testimonial > .conclusion {
+  font-family: carettere;
+}
+
+.testimonial1 {
+  width: 24%;
+  font-family: "ubuntu-light";
+  font-size: 0.8rem;
+}
+
+.testimonial1 > .conclusion {
+  font-size: 1.2rem;
+}
+
+.testimonial2 {
+  width: 74%;
+  font-size: 1.2rem;
+  text-align: end;
+}
+
+.testimonial2 > .conclusion {
+  font-size: 1.4rem;
+}
+
+.testimonial3 {
+  width: 100%;
+  text-align: center;
+}
+
+.testimonial3 > .conclusion {
+  font-size: 1.6rem;
+}
+
+.testimonial.hoverOn {
+  opacity: 0.2;
+}
+
+.testimonial {
+  transition: opacity 1s ease, text-shadow 1s ease;
+}
+
+.testimonial.hovered {
+  opacity: 1;
+  text-shadow: 0px 0px 20px #cecece89;
+}

@@ -1,0 +1,58 @@
+<div id="intro-section" class="root-container">
+  <div class="section-content-container">
+    <h2 class="section-heading">Client Testimonials</h2>
+    <div class="testimonials-wrapper">
+      <div
+        class="testimonial testimonial1"
+        [class.hovered]="hoveredTestimonial === 'testimonial1'"
+        [class.hoverOn]="hoveredTestimonial !== ''"
+        (mouseover)="handleTestimonialHover($event, 'over')"
+        (mouseout)="handleTestimonialHover($event, 'out')"
+      >
+        ”One of the things I liked the most is that the project went very fast
+        and smooth in terms of determining how the design should look like. The
+        style match was exactly what I needed. I found very professional the
+        fact that Victor kept me updated and asked for feedbacks with each step
+        and I believe this is how we achieved such an amazing result.
+        <br />
+        <br />
+        <span class="conclusion">Great job, thank you!”</span>
+      </div>
+      <div
+        class="testimonial testimonial2"
+        [class.hovered]="hoveredTestimonial === 'testimonial2'"
+        [class.hoverOn]="hoveredTestimonial !== ''"
+        (mouseover)="handleTestimonialHover($event, 'over')"
+        (mouseout)="handleTestimonialHover($event, 'out')"
+      >
+        “The result is amazing and I honestly mean what I say. The landing page
+        for my editing account reflects my style perfectly and I couldn't
+        imagine it to look different from what we've got in the end. Victor also
+        managed to combine a structured project plan with a pleasant
+        communication process.
+        <br />
+        <br />
+        <span class="conclusion">A big big thank you for the great job!”</span>
+      </div>
+      <div
+        class="testimonial testimonial3"
+        [class.hovered]="hoveredTestimonial === 'testimonial3'"
+        [class.hoverOn]="hoveredTestimonial !== ''"
+        (mouseover)="handleTestimonialHover($event, 'over')"
+        (mouseout)="handleTestimonialHover($event, 'out')"
+      >
+        We were very satisfied with the work that Victor delivered! He expertly
+        migrated a complex but static website into an elegant, modern Wix Studio
+        site with a strong emphasis on visual appeal and user-friendliness,
+        particularly for mobile users. He met all the project requirements with
+        precision and skill. What also truly stood out was Vitor's empathy and
+        quick understanding of our client's business model, which helped our
+        team guide the design process effectively. His proficiency and attention
+        to detail ensured a seamless transition.
+        <br />
+        <br />
+        <span class="conclusion">Highly recommended!”</span>
+      </div>
+    </div>
+  </div>
+</div>
