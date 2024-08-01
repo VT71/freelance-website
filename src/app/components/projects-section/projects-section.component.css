@@ -71,15 +71,15 @@
 }
 
 .project-image.ve {
-  background-image: url("../../assets/project1.png");
+  background-image: url("../../../assets/project1.png");
 }
 
 .project-image.ac {
-  background-image: url("../../assets/project2.png");
+  background-image: url("../../../assets/project2.png");
 }
 
 .project-image.sc {
-  background-image: url("../../assets/project3.png");
+  background-image: url("../../../assets/project3.png");
 }
 
 .project-info {
