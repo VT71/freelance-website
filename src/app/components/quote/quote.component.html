@@ -1,1 +1,113 @@
-<p>quote works!</p>
+<div id="intro-section" class="root-container">
+  <div class="section-content-container">
+    <h2 class="section-heading">Quote</h2>
+    <div class="estimator-wrapper">
+      <div class="selection-wrapper">
+        <h3 class="selection-heading">Number of Pages</h3>
+        <div class="selection-options">
+          <div
+            class="option"
+            [class.selected]="numberOfPages === 1"
+            (click)="selectionHandle(1, 'number-of-pages')"
+          >
+            <span class="value">1</span>
+            <span class="description">Very simple and focused websites.</span>
+          </div>
+          <div
+            class="option"
+            [class.selected]="numberOfPages === 2"
+            (click)="selectionHandle(2, 'number-of-pages')"
+          >
+            <span class="value">2-3</span>
+            <span class="description"
+              >Websites simple and straightforward in nature.</span
+            >
+          </div>
+          <div
+            class="option"
+            [class.selected]="numberOfPages === 3"
+            (click)="selectionHandle(3, 'number-of-pages')"
+          >
+            <span class="value">4+</span>
+            <span class="description"
+              >Websites with extensive content and complex structures.</span
+            >
+          </div>
+        </div>
+        <h3 class="selection-heading">Design</h3>
+        <div class="selection-options">
+          <div
+            class="option"
+            [class.selected]="designType === 1"
+            (click)="selectionHandle(1, 'design')"
+          >
+            <span class="value">Basic</span>
+            <span class="description"
+              >Prioritize simplicity, functionality, and
+              cost-effectiveness.</span
+            >
+          </div>
+          <div
+            class="option"
+            [class.selected]="designType === 2"
+            (click)="selectionHandle(2, 'design')"
+          >
+            <span class="value">Intermediate</span>
+            <span class="description"
+              >Polished and professional online presence while still
+              prioritizing efficiency and functionality.</span
+            >
+          </div>
+          <div
+            class="option"
+            [class.selected]="designType === 3"
+            (click)="selectionHandle(3, 'design')"
+          >
+            <span class="value">Advanced</span>
+            <span class="description"
+              >Striking online experiences and innovative design. Stand out in
+              their industry.</span
+            >
+          </div>
+        </div>
+        <h3 class="selection-heading">Type</h3>
+        <div class="selection-options">
+          <div
+            class="option"
+            [class.selected]="type === 1"
+            (click)="selectionHandle(1, 'type')"
+          >
+            <span class="value">Standard</span>
+            <span class="description"
+              >Simple informational website displaying client information,
+              services, work, contact info etc.</span
+            >
+          </div>
+          <div
+            class="option"
+            [class.selected]="type === 2"
+            (click)="selectionHandle(2, 'type')"
+          >
+            <span class="value">E-Shop</span>
+            <span class="description"
+              >Website offering a wide array of products for online
+              purchase.</span
+            >
+          </div>
+          <div
+            class="option"
+            [class.selected]="type === 3"
+            (click)="selectionHandle(3, 'type')"
+          >
+            <span class="value">Bookings</span>
+            <span class="description"
+              >Facilitating booking and reservations for various services or
+              accommodations.</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="result-wrapper"></div>
+    </div>
+  </div>
+</div>
