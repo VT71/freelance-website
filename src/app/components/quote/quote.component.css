@@ -63,3 +63,50 @@
 .option.selected {
   border: 1px solid #ffffff;
 }
+
+.result-wrapper {
+  width: 33%;
+  border: 3px solid #ffffff;
+  -webkit-box-shadow: 0px 0px 20px -5px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0px 0px 20px -5px rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 20px -5px rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.result-heading {
+  font-family: carettere;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.summary-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.summary {
+  width: 32%;
+  text-align: center;
+}
+
+.summary:nth-last-child(1) {
+  width: 100%;
+  text-align: center;
+}
+
+.summary-title {
+  font-family: "ubuntu-light";
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.summary-value {
+  font-family: "ubuntu-bold";
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}

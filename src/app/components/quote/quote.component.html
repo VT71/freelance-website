@@ -7,16 +7,16 @@
         <div class="selection-options">
           <div
             class="option"
-            [class.selected]="numberOfPages === 1"
-            (click)="selectionHandle(1, 'number-of-pages')"
+            [class.selected]="numberOfPages === '1'"
+            (click)="selectionHandle('1', 'number-of-pages')"
           >
             <span class="value">1</span>
             <span class="description">Very simple and focused websites.</span>
           </div>
           <div
             class="option"
-            [class.selected]="numberOfPages === 2"
-            (click)="selectionHandle(2, 'number-of-pages')"
+            [class.selected]="numberOfPages === '2-3'"
+            (click)="selectionHandle('2-3', 'number-of-pages')"
           >
             <span class="value">2-3</span>
             <span class="description"
@@ -25,8 +25,8 @@
           </div>
           <div
             class="option"
-            [class.selected]="numberOfPages === 3"
-            (click)="selectionHandle(3, 'number-of-pages')"
+            [class.selected]="numberOfPages === '4+'"
+            (click)="selectionHandle('4+', 'number-of-pages')"
           >
             <span class="value">4+</span>
             <span class="description"
@@ -38,8 +38,8 @@
         <div class="selection-options">
           <div
             class="option"
-            [class.selected]="designType === 1"
-            (click)="selectionHandle(1, 'design')"
+            [class.selected]="designType === 'Basic'"
+            (click)="selectionHandle('Basic', 'design')"
           >
             <span class="value">Basic</span>
             <span class="description"
@@ -49,8 +49,8 @@
           </div>
           <div
             class="option"
-            [class.selected]="designType === 2"
-            (click)="selectionHandle(2, 'design')"
+            [class.selected]="designType === 'Intermediate'"
+            (click)="selectionHandle('Intermediate', 'design')"
           >
             <span class="value">Intermediate</span>
             <span class="description"
@@ -60,8 +60,8 @@
           </div>
           <div
             class="option"
-            [class.selected]="designType === 3"
-            (click)="selectionHandle(3, 'design')"
+            [class.selected]="designType === 'Advanced'"
+            (click)="selectionHandle('Advanced', 'design')"
           >
             <span class="value">Advanced</span>
             <span class="description"
@@ -74,8 +74,8 @@
         <div class="selection-options">
           <div
             class="option"
-            [class.selected]="type === 1"
-            (click)="selectionHandle(1, 'type')"
+            [class.selected]="type === 'Standard'"
+            (click)="selectionHandle('Standard', 'type')"
           >
             <span class="value">Standard</span>
             <span class="description"
@@ -85,8 +85,8 @@
           </div>
           <div
             class="option"
-            [class.selected]="type === 2"
-            (click)="selectionHandle(2, 'type')"
+            [class.selected]="type === 'E-Shop'"
+            (click)="selectionHandle('E-Shop', 'type')"
           >
             <span class="value">E-Shop</span>
             <span class="description"
@@ -96,8 +96,8 @@
           </div>
           <div
             class="option"
-            [class.selected]="type === 3"
-            (click)="selectionHandle(3, 'type')"
+            [class.selected]="type === 'Bookings'"
+            (click)="selectionHandle('Bookings', 'type')"
           >
             <span class="value">Bookings</span>
             <span class="description"
@@ -107,7 +107,28 @@
           </div>
         </div>
       </div>
-      <div class="result-wrapper"></div>
+      <div class="result-wrapper">
+        <h3 class="result-heading">Estimated Costs</h3>
+        <div class="summary-wrapper">
+          <div class="summary">
+            <p class="summary-title">Pages</p>
+            <p class="summary-value">{{ numberOfPages }}</p>
+          </div>
+          <div class="summary">
+            <p class="summary-title">Design</p>
+            <p class="summary-value">{{ designType }}</p>
+          </div>
+          <div class="summary">
+            <p class="summary-title">Type</p>
+            <p class="summary-value">{{ type }}</p>
+          </div>
+          <div class="summary">
+            <p class="summary-title">Project Duration</p>
+            <p class="summary-value">{{ duration ? duration : '' }}</p>
+          </div>
+        </div>
+        <h3 class="result-heading">£{{ totalCost }}</h3>
+      </div>
     </div>
   </div>
 </div>
