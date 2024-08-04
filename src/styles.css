@@ -42,6 +42,11 @@ body {
 }
 
 @font-face {
+    font-family: ubuntu-regular;
+    src: url(assets/fonts/Ubuntu/Ubuntu-Regular.ttf) format("opentype");
+  }
+
+@font-face {
   font-family: carettere;
   src: url(assets/fonts/Carattere/Carattere-Regular.ttf) format("opentype");
 }
