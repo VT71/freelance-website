@@ -15,20 +15,20 @@
           </div>
           <div
             class="option"
-            [class.selected]="numberOfPages === '2-3'"
-            (click)="selectionHandle('2-3', 'number-of-pages')"
+            [class.selected]="numberOfPages === '5'"
+            (click)="selectionHandle('5', 'number-of-pages')"
           >
-            <span class="value">2-3</span>
+            <span class="value">5</span>
             <span class="description"
               >Websites simple and straightforward in nature.</span
             >
           </div>
           <div
             class="option"
-            [class.selected]="numberOfPages === '4+'"
-            (click)="selectionHandle('4+', 'number-of-pages')"
+            [class.selected]="numberOfPages === '10'"
+            (click)="selectionHandle('10', 'number-of-pages')"
           >
-            <span class="value">4+</span>
+            <span class="value">10</span>
             <span class="description"
               >Websites with extensive content and complex structures.</span
             >
@@ -37,7 +37,7 @@
         <h3 class="selection-heading">Design</h3>
         <div class="selection-options">
           <div
-            class="option"
+            class="option design"
             [class.selected]="designType === 'Basic'"
             (click)="selectionHandle('Basic', 'design')"
           >
@@ -48,22 +48,11 @@
             >
           </div>
           <div
-            class="option"
-            [class.selected]="designType === 'Intermediate'"
-            (click)="selectionHandle('Intermediate', 'design')"
-          >
-            <span class="value">Intermediate</span>
-            <span class="description"
-              >Polished and professional online presence while still
-              prioritizing efficiency and functionality.</span
-            >
-          </div>
-          <div
-            class="option"
+            class="option design"
             [class.selected]="designType === 'Advanced'"
             (click)="selectionHandle('Advanced', 'design')"
           >
-            <span class="value">Advanced</span>
+            <span class="value">Advanced/Customised</span>
             <span class="description"
               >Striking online experiences and innovative design. Stand out in
               their industry.</span
@@ -124,7 +113,7 @@
           </div>
           <div class="summary">
             <p class="summary-title">Project Duration</p>
-            <p class="summary-value">{{ duration ? duration : '' }}</p>
+            <p class="summary-value">{{ duration ? duration : "" }}</p>
           </div>
         </div>
         <h3 class="result-heading">£{{ totalCost }}</h3>

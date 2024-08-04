@@ -24,7 +24,17 @@ export class QuoteComponent {
       this.type = value;
     }
 
-    if (this.numberOfPages !== '' && this.designType !== '' && this.type !== '') {
+    if (this.type === 'E-Shop' || this.type === 'Bookings') {
+      if (this.numberOfPages === '1') {
+        this.numberOfPages = '5';
+      }
+    }
+
+    if (
+      this.numberOfPages !== '' &&
+      this.designType !== '' &&
+      this.type !== ''
+    ) {
       this.generateCostTime();
     }
   }
@@ -35,43 +45,35 @@ export class QuoteComponent {
 
     switch (this.numberOfPages) {
       case '1':
-        cost += 150;
+        cost += 200;
         time += 2;
         break;
-      case '2-3':
-        cost += 300;
+      case '5':
+        cost += 450;
         time += 5;
         break;
-      case '4+':
-        cost += 500;
+      case '10':
+        cost += 800;
         time += 8;
         break;
     }
 
     switch (this.designType) {
-      case 'Basic':
-        cost *= 1.5;
-        time *= 1.5;
-        break;
-      case 'Intermediate':
-        cost *= 1.8;
-        time *= 1.8;
-        break;
       case 'Advanced':
-        cost *= 2.2;
-        time *= 2.2;
+        cost *= 2;
+        time *= 2;
         break;
     }
 
     switch (this.type) {
       case 'E-Shop':
       case 'Bookings':
-        cost *= 1.8;
-        time *= 1.8;
+        cost *= 1.2;
+        time *= 1.2;
         break;
     }
 
-    this.totalCost = cost;
-    this.duration = time;
+    this.totalCost = Math.round(cost);
+    this.duration = Math.round(time);
   }
 }

@@ -43,6 +43,10 @@
   cursor: pointer;
 }
 
+.option.design {
+    width: 49%;
+}
+
 .option > .description {
   font-size: 0.8rem;
   color: #e0e0e0;
