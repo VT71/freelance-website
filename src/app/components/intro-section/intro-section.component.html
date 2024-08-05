@@ -26,7 +26,7 @@
               <div class="reflection"></div>
               <a
                 class="navlink"
-                href="#intro-section"
+                href="#projects-section"
                 (click)="onClickNav('projects')"
                 >Projects</a
               >
@@ -41,7 +41,7 @@
               <div class="reflection"></div>
               <a
                 class="navlink"
-                href="#intro-section"
+                href="#reviews-section"
                 (click)="onClickNav('reviews')"
                 >Reviews</a
               >
@@ -56,7 +56,7 @@
               <div class="reflection"></div>
               <a
                 class="navlink"
-                href="#intro-section"
+                href="#quote-section"
                 (click)="onClickNav('quote')"
                 >Quote</a
               >
@@ -71,7 +71,7 @@
               <div class="reflection"></div>
               <a
                 class="navlink"
-                href="#intro-section"
+                href="#contact-section"
                 (click)="onClickNav('contact')"
                 >Contact</a
               >
@@ -108,9 +108,23 @@
         </div>
       </div>
       <div class="main-buttons-container">
-        <button class="main-button" href="#intro-section">Get a Quote</button>
-        <button class="main-button" href="#intro-section">Let's talk</button>
-        <button class="main-button" href="#intro-section">Hire Options</button>
+        <a
+          class="main-button"
+          href="#quote-section"
+          (click)="onClickNav('quote')"
+        >
+          Get a Quote
+        </a>
+        <a
+          class="main-button"
+          href="#contact-section"
+          (click)="onClickNav('contact')"
+        >
+          Let's talk
+        </a>
+        <a class="main-button" href="http://bit.ly/vt-webdev" target="_blank">
+          Hire Options
+        </a>
       </div>
     </div>
   </div>
