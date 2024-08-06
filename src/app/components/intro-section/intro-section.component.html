@@ -1,5 +1,15 @@
 <div id="intro-section" class="root-container">
   <div class="section-content-container">
+    @if (breakPointPromise$ | async; as mobileDevice) {
+    <button class="icon-button navbar" (click)="handleMobileNavDisplay()">
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Menu Button"
+        fontIcon="menu"
+      ></mat-icon>
+    </button>
+    <div class="mobile-navbar-container" [class.open]="mobileNavOpen"></div>
+    } @else {
     <div class="navbar-wrapper">
       <nav class="navbar">
         <ol class="navlinks-list">
@@ -81,6 +91,7 @@
         </ol>
       </nav>
     </div>
+    }
     <div class="intro-text-wrapper">
       <h2 class="intro-heading">
         Hi, I'm Victor
