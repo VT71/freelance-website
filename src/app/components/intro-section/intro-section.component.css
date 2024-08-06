@@ -15,6 +15,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .navbar {
@@ -140,6 +141,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-top: 2.5rem;
 }
@@ -180,5 +182,14 @@
 @media screen and (max-width: 650px) {
   .navbar-wrapper {
     display: none;
+  }
+  .section-content-container {
+    padding: 0 1rem;
+  }
+  .intro-heading {
+    font-size: 1rem;
+  }
+  .carattere {
+    font-size: 1.6rem;
   }
 }

@@ -113,7 +113,9 @@
           </div>
           <div class="summary">
             <p class="summary-title">Project Duration</p>
-            <p class="summary-value">{{ duration ? duration : "" }}</p>
+            <p class="summary-value">
+              {{ duration ? duration + " Days" : "" }}
+            </p>
           </div>
         </div>
         <h3 class="result-heading">£{{ totalCost }}</h3>
