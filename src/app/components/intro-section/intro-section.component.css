@@ -207,19 +207,7 @@
   transition: left 2s ease-in-out;
 }
 
-@media screen and (max-width: 650px) {
-  /* .icon-button.navbar {
-    display: block;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-  } */
-  /* .navbar-wrapper {
-    display: none;
-  } */
-  .section-content-container {
-    padding: 0 1rem;
-  }
+@media screen and (max-width: 599.98px) {
   .intro-heading {
     font-size: 1.2rem;
   }
@@ -234,5 +222,8 @@
   }
   .mobile-navbar-container.open {
     left: 0;
+  }
+  .stat-container {
+    font-size: 0.7rem;
   }
 }

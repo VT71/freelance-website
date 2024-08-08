@@ -44,7 +44,7 @@
 }
 
 .option.design {
-    width: 49%;
+  width: 49%;
 }
 
 .option > .description {
@@ -113,4 +113,45 @@
   font-family: "ubuntu-bold";
   text-transform: uppercase;
   font-size: 0.8rem;
+}
+
+@media screen and (max-width: 900px) {
+  .estimator-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .selection-wrapper,
+  .result-wrapper {
+    width: 100%;
+  }
+  .result-wrapper {
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 599.98px) {
+  .selection-heading {
+    font-size: 1.4rem;
+  }
+  .option {
+    height: 90px;
+    padding: 0.5rem 0;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .option > .value {
+    font-size: 0.8rem;
+  }
+  .option > .description {
+    font-size: 0.6rem;
+  }
+  .selection-options.number > .option {
+    height: 75px;
+  }
+  .selection-options.design > .option {
+    height: 80px;
+  }
+  .result-heading {
+    font-size: 2rem;
+  }
 }

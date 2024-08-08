@@ -20,6 +20,7 @@
   display: flex;
   justify-content: space-between;
   color: #ffffff;
+  flex-wrap: wrap;
 }
 
 .contact {
@@ -45,6 +46,19 @@
 }
 
 .contact > .bottom a {
-    text-decoration: none;
-    color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 599.98px) {
+  .contact-details {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .contact > .top {
+    font-size: 1.2rem;
+  }
+  .contact > .bottom {
+    font-size: 0.8rem;
+  }
 }

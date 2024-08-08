@@ -14,7 +14,7 @@ body {
   width: 100%;
   max-width: 1000px;
   margin: auto;
-  padding: 3rem 0;
+  padding: 3rem 1.5rem;
 }
 
 .section-heading {
@@ -43,9 +43,9 @@ body {
 }
 
 @font-face {
-    font-family: ubuntu-regular;
-    src: url(assets/fonts/Ubuntu/Ubuntu-Regular.ttf) format("opentype");
-  }
+  font-family: ubuntu-regular;
+  src: url(assets/fonts/Ubuntu/Ubuntu-Regular.ttf) format("opentype");
+}
 
 @font-face {
   font-family: carettere;
@@ -59,4 +59,20 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@media screen and (max-width: 599.98px) {
+  .section-content-container {
+    padding: 2rem 1rem;
+  }
+  .section-heading {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+  .project-title {
+    font-size: 1.6rem;
+  }
+  .project-description {
+    margin-top: 0.6rem
+  }
 }

@@ -29,18 +29,7 @@ export class IntroSectionComponent implements OnInit {
       .observe([Breakpoints.XSmall])
       .pipe(
         map((result) => {
-          //   const breakpoints = result.breakpoints;
-          //   console.log(JSON.stringify(breakpoints));
-          //   console.log('Handset props: ' + JSON.stringify(Breakpoints.Handset));
-          //   console.log('Tablet props: ' + JSON.stringify(Breakpoints.Tablet));
-          //   if (breakpoints[Breakpoints.Handset]) {
-          //     console.log('Handset');
-          //   }
-          //   if (breakpoints[Breakpoints.Tablet]) {
-          //     console.log('Tablet');
-          //   }
           if (result.matches) {
-            console.log('MATCHES');
             return true;
           } else {
             return false;

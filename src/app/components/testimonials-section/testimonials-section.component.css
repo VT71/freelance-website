@@ -51,3 +51,16 @@
   opacity: 1;
   text-shadow: 0px 0px 20px #cecece89;
 }
+
+@media screen and (max-width: 599.98px) {
+  .testimonial1 {
+    width: 32%;
+  }
+  .testimonial2 {
+    width: 65%;
+    font-size: 1rem;
+  }
+  .testimonial3 {
+    font-size: 0.9rem;
+  }
+}
