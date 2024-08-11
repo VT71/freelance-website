@@ -66,17 +66,17 @@
     0px 0px 51px -18px rgba(255, 255, 255, 1);
 }
 
-.project-image.ve {
-  background-image: url("../../../assets/project1.png");
+.project-image.ss {
+  background-image: url("../../../assets/project-ss.png");
 }
 
-.project-image.ac {
-  background-image: url("../../../assets/project2.png");
+.project-image.br {
+  background-image: url("../../../assets/project-br.png");
 }
 
-.project-image.sc {
-  background-image: url("../../../assets/project3.png");
-}
+.project-image.ps {
+    background-image: url("../../../assets/project-ps.png");
+  }
 
 .project-info {
   height: 60%;
